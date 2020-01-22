@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'event.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,35 +30,44 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-
-
-
+  Event e = Event();
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
+      backgroundColor: Colors.grey,
       appBar: AppBar(
-
         title: Text(widget.title),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display4,
-            ),
-          ],
+        child: GridView.count(
+          crossAxisCount: 2,
+          childAspectRatio: 8.0 / 3.0,
+          children: List.generate(events.length, (index) {
+            return Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0),
+              ),
+              child: Column(
+                children: <Widget>[
+                  Text(
+                    events[index]['name'],
+                    style: GoogleFonts.roboto(
+                        textStyle: Theme.of(context).textTheme.display1),
+                  ),
+                  Text(
+                    "${events[index]['startTime']} to ${events[index]['endTime']} ",
+                    style: GoogleFonts.roboto(
+                        textStyle: Theme.of(context).textTheme.body1),
+                  ),
+                ],
+              ),
+            ); //robohash.org api provide you different images for any number you are giving
+          }),
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: () {},
         tooltip: 'Increment',
         child: Icon(Icons.android),
       ), // This trailing comma makes auto-formatting nicer for build methods.
