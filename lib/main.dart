@@ -33,13 +33,23 @@ class _MyHomePageState extends State<MyHomePage> {
   LeisureCentre mdw = LeisureCentre();
   @override
   Widget build(BuildContext context) {
-    List myList = mdw.classList('b');
-    return Scaffold(
-      backgroundColor: Colors.grey,
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
+    List tempList = mdw.classList('b');
+    List myList;
+    final pages = List<Widget>.generate(7, (i) {
+      myList = tempList
+          .where((e) =>
+              e.day ==
+              [
+                'monday',
+                'tuesday',
+                'wednesday',
+                'thursday',
+                'friday',
+                'saturday',
+                'sunday'
+              ][i])
+          .toList();
+      return Center(
         child: GridView.count(
           crossAxisCount: 2,
           childAspectRatio: 8.0 / 4.0,
@@ -75,7 +85,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontStyle: FontStyle.italic,
                       ),
                     ),
-
                     Text(
                       "${myList[index].start} to ${myList[index].finish} ",
                       style: TextStyle(fontSize: 24.0),
@@ -86,6 +95,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ); //robohash.org api provide you different images for any number you are giving
           }),
         ),
+      );
+    });
+    return Scaffold(
+      backgroundColor: Colors.grey,
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: PageView(
+        children: pages,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
