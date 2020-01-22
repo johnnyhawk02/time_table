@@ -33,6 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
   LeisureCentre mdw = LeisureCentre();
   @override
   Widget build(BuildContext context) {
+    List myList = mdw.classList('b');
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: AppBar(
@@ -41,31 +42,46 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: GridView.count(
           crossAxisCount: 2,
-          childAspectRatio: 8.0 / 3.0,
-          children: List.generate(mdw.events.length, (index) {
+          childAspectRatio: 8.0 / 4.0,
+          children: List.generate(myList.length, (index) {
             return Card(
+              color: myList[index].day == 'monday'
+                  ? Colors.blue
+                  : myList[index].day == 'tueday'
+                      ? Colors.yellow
+                      : myList[index].day == 'wednesday'
+                          ? Colors.green
+                          : myList[index].day == 'thursday'
+                              ? Colors.orange
+                              : myList[index].day == 'friday'
+                                  ? Colors.pink
+                                  : myList[index].day == 'saturday'
+                                      ? Colors.teal
+                                      : Colors.amber,
               elevation: 4,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15.0),
               ),
-              child: Column(
-                children: <Widget>[
-                  Text(
-                    mdw.events[index].day,
-                    style: GoogleFonts.roboto(
-                        textStyle: Theme.of(context).textTheme.body1),
-                  ),
-                  Text(
-                    mdw.events[index].name,
-                    style: GoogleFonts.roboto(
-                        textStyle: Theme.of(context).textTheme.body1),
-                  ),
-                  Text(
-                    "${mdw.events[index].start} to ${mdw.events[index].finish} ",
-                    style: GoogleFonts.roboto(
-                        textStyle: Theme.of(context).textTheme.body2),
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: <Widget>[
+                    Text(
+                      myList[index].day + ': ' + myList[index].shortName,
+                      style: GoogleFonts.lato(
+                        textStyle: Theme.of(context).textTheme.display1,
+                        fontSize: 15,
+                        fontWeight: FontWeight.w700,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+
+                    Text(
+                      "${myList[index].start} to ${myList[index].finish} ",
+                      style: TextStyle(fontSize: 24.0),
+                    ),
+                  ],
+                ),
               ),
             ); //robohash.org api provide you different images for any number you are giving
           }),
