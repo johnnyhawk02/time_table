@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  Event e = Event();
+  LeisureCentre mdw = LeisureCentre();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: GridView.count(
           crossAxisCount: 2,
           childAspectRatio: 8.0 / 3.0,
-          children: List.generate(events.length, (index) {
+          children: List.generate(mdw.events.length, (index) {
             return Card(
               elevation: 4,
               shape: RoundedRectangleBorder(
@@ -51,14 +51,19 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 children: <Widget>[
                   Text(
-                    events[index]['name'],
-                    style: GoogleFonts.roboto(
-                        textStyle: Theme.of(context).textTheme.display1),
-                  ),
-                  Text(
-                    "${events[index]['startTime']} to ${events[index]['endTime']} ",
+                    mdw.events[index].day,
                     style: GoogleFonts.roboto(
                         textStyle: Theme.of(context).textTheme.body1),
+                  ),
+                  Text(
+                    mdw.events[index].name,
+                    style: GoogleFonts.roboto(
+                        textStyle: Theme.of(context).textTheme.body1),
+                  ),
+                  Text(
+                    "${mdw.events[index].start} to ${mdw.events[index].finish} ",
+                    style: GoogleFonts.roboto(
+                        textStyle: Theme.of(context).textTheme.body2),
                   ),
                 ],
               ),
