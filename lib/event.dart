@@ -41,6 +41,15 @@ class Event {
 }
 
 class LeisureCentre {
+  List days = [
+    'monday',
+    'tuesday',
+    'wednesday',
+    'thursday',
+    'friday',
+    'saturday',
+    'sunday'
+  ];
   List<Event> events = [];
   String openingTime;
   String closingTime;

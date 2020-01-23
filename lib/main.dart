@@ -29,43 +29,37 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  String currentDay = 'monday';
   LeisureCentre mdw = LeisureCentre();
   @override
   Widget build(BuildContext context) {
-    List tempList = mdw.classList('b');
+    List tempList = mdw.classList('');
     List myList;
     final pages = List<Widget>.generate(7, (i) {
-      myList = tempList
-          .where((e) =>
-              e.day ==
-              [
-                'monday',
-                'tuesday',
-                'wednesday',
-                'thursday',
-                'friday',
-                'saturday',
-                'sunday'
-              ][i])
-          .toList();
+      myList = tempList.where((e) => e.day == mdw.days[i]).toList();
       return Center(
         child: GridView.count(
           crossAxisCount: 2,
           childAspectRatio: 8.0 / 4.0,
           children: List.generate(myList.length, (index) {
             return Card(
-              color: myList[index].day == 'monday'
+              color: myList[index].name.toLowerCase().contains('pump')
                   ? Colors.blue
-                  : myList[index].day == 'tueday'
+                  : myList[index].name.toLowerCase().contains('sprint')
                       ? Colors.yellow
-                      : myList[index].day == 'wednesday'
+                      : myList[index].name.toLowerCase().contains('zumba')
                           ? Colors.green
-                          : myList[index].day == 'thursday'
+                          : myList[index].name.toLowerCase().contains('cx')
                               ? Colors.orange
-                              : myList[index].day == 'friday'
+                              : myList[index]
+                                      .name
+                                      .toLowerCase()
+                                      .contains('yoga')
                                   ? Colors.pink
-                                  : myList[index].day == 'saturday'
+                                  : myList[index]
+                                          .name
+                                          .toLowerCase()
+                                          .contains('spin')
                                       ? Colors.teal
                                       : Colors.amber,
               elevation: 4,
@@ -77,17 +71,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      myList[index].day + ': ' + myList[index].shortName,
-                      style: GoogleFonts.lato(
+                      myList[index].shortName,
+                      style: GoogleFonts.roboto(
                         textStyle: Theme.of(context).textTheme.display1,
-                        fontSize: 15,
+                        fontSize: 16,
                         fontWeight: FontWeight.w700,
-                        fontStyle: FontStyle.italic,
                       ),
                     ),
                     Text(
                       "${myList[index].start} to ${myList[index].finish} ",
-                      style: TextStyle(fontSize: 24.0),
+                      style: TextStyle(fontSize: 20.0),
                     ),
                   ],
                 ),
@@ -100,10 +93,31 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(currentDay),
       ),
-      body: PageView(
-        children: pages,
+      body: Flex(
+        direction: Axis.vertical,
+        children: <Widget>[
+          Flexible(
+              flex: 1,
+              fit: FlexFit.loose,
+              child: Container (
+                color: Colors.blue,
+                child: Card(),
+              ),),
+          Flexible(
+            flex: 5,
+            fit: FlexFit.loose,
+            child: PageView(
+              children: pages,
+              onPageChanged: (int page) {
+                setState(() {
+                  currentDay = mdw.days[page];
+                });
+              },
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
