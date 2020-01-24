@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:menu/menu.dart';
 
+import 'classes_all_days.dart';
 import 'classes_page.dart';
 import 'event.dart';
 
@@ -43,22 +44,31 @@ class _MyHomePageState extends State<MyHomePage> {
 
     print('got tempList');
     List myList;
-    var tmpClass = ['pump','sprint','yoga','zumba','boxer'];
+    var tmpClass = [
+      'pump',
+      'sprint',
+      'yoga',
+      'zumba',
+      'boxer',
+      'b',
+      'd',
+    ];
     final choices = List<Widget>.generate(tmpClass.length, (i) {
-
       return ChoiceChip(
-       pressElevation: 0.0,
-       selectedColor: Colors.blue,
-       backgroundColor: Colors.grey[100],
-       label: Text(tmpClass[i]),
-       selected: _value == tmpClass[i],
-       onSelected: (bool selected) {
-         setState(() {
-           _value = selected ? tmpClass[i] : null;
-           classFilter = _value == tmpClass[i] ? tmpClass[i]:'';
-         },);
-       },
-     );
+        pressElevation: 0.0,
+        selectedColor: Colors.blue,
+        backgroundColor: Colors.grey[100],
+        label: Text(tmpClass[i]),
+        selected: _value == tmpClass[i],
+        onSelected: (bool selected) {
+          setState(
+            () {
+              _value = selected ? tmpClass[i] : null;
+              classFilter = _value == tmpClass[i] ? tmpClass[i] : '';
+            },
+          );
+        },
+      );
     });
 
     final pages = List<Widget>.generate(7, (i) {
@@ -68,27 +78,29 @@ class _MyHomePageState extends State<MyHomePage> {
       );
     });
     final pagesAllDays = List<Widget>.generate(1, (i) {
-      myList = tempList;//.where((e) => e.day == mdw.days[i]).toList();
-      return ClassesPage(
+      myList = tempList; //.where((e) => e.day == mdw.days[i]).toList();
+      return ClassesAllDays(
         myList: myList,
       );
     });
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: AppBar(
-        title: Text('$currentDay - ${classFilter==""?'all classes':classFilter}'),
+        title: Text(' ${classFilter == "" ? 'all classes' : classFilter}'),
       ),
 
       body: Flex(
         direction: Axis.vertical,
         children: <Widget>[
           Flexible(
-            flex: 2,
+            flex: 3,
             fit: FlexFit.tight,
-            child: GridView.count(
-              crossAxisCount: 5,
-
-              children:  choices
+            child: Wrap(
+              runSpacing: 5.0,
+              spacing: 5.0,
+              //scrollDirection: Axis.horizontal,
+              //crossAxisCount: 1,
+              children: choices,
             ),
           ),
           Flexible(
@@ -97,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Padding(
               padding: const EdgeInsets.fromLTRB(4, 0, 4, 0),
               child: PageView(
-                children: pagesAllDays,//pages,
+                children: pagesAllDays, //pages,
                 onPageChanged: (int page) {
                   setState(() {
                     currentDay = mdw.days[page];
