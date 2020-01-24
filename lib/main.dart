@@ -43,8 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
     print('got tempList');
     List myList;
-    final choices = List<Widget>.generate(2, (i) {
-      var tmpClass = ['pump','sprint'];
+    var tmpClass = ['pump','sprint','yoga','zumba','boxer'];
+    final choices = List<Widget>.generate(tmpClass.length, (i) {
+
       return ChoiceChip(
        pressElevation: 0.0,
        selectedColor: Colors.blue,
@@ -66,31 +67,37 @@ class _MyHomePageState extends State<MyHomePage> {
         myList: myList,
       );
     });
+    final pagesAllDays = List<Widget>.generate(1, (i) {
+      myList = tempList;//.where((e) => e.day == mdw.days[i]).toList();
+      return ClassesPage(
+        myList: myList,
+      );
+    });
     return Scaffold(
       backgroundColor: Colors.grey,
       appBar: AppBar(
-        title: Text(currentDay),
+        title: Text('$currentDay - ${classFilter==""?'all classes':classFilter}'),
       ),
 
       body: Flex(
         direction: Axis.vertical,
         children: <Widget>[
           Flexible(
-            flex: 1,
+            flex: 2,
             fit: FlexFit.tight,
             child: GridView.count(
-              crossAxisCount: 6,
+              crossAxisCount: 5,
 
               children:  choices
             ),
           ),
           Flexible(
-            flex: 9,
+            flex: 18,
             fit: FlexFit.tight,
             child: Padding(
               padding: const EdgeInsets.fromLTRB(4, 0, 4, 0),
               child: PageView(
-                children: pages,
+                children: pagesAllDays,//pages,
                 onPageChanged: (int page) {
                   setState(() {
                     currentDay = mdw.days[page];
