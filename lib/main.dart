@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:menu/menu.dart';
 
+import 'classes_page.dart';
 import 'event.dart';
 
 void main() => runApp(MyApp());
@@ -29,65 +31,39 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String classFilter = '';
+
   String currentDay = 'monday';
   LeisureCentre mdw = LeisureCentre();
+
+  var _value;
   @override
   Widget build(BuildContext context) {
-    List tempList = mdw.classList('');
+    List tempList = mdw.classList(classFilter);
+
+    print('got tempList');
     List myList;
+    final choices = List<Widget>.generate(2, (i) {
+      var tmpClass = ['pump','sprint'];
+      return ChoiceChip(
+       pressElevation: 0.0,
+       selectedColor: Colors.blue,
+       backgroundColor: Colors.grey[100],
+       label: Text(tmpClass[i]),
+       selected: _value == tmpClass[i],
+       onSelected: (bool selected) {
+         setState(() {
+           _value = selected ? tmpClass[i] : null;
+           classFilter = _value == tmpClass[i] ? tmpClass[i]:'';
+         },);
+       },
+     );
+    });
+
     final pages = List<Widget>.generate(7, (i) {
       myList = tempList.where((e) => e.day == mdw.days[i]).toList();
-      return Center(
-        child: GridView.count(
-          crossAxisCount: 2,
-          childAspectRatio: 8.0 / 4.0,
-          children: List.generate(myList.length, (index) {
-            return Card(
-              color: myList[index].name.toLowerCase().contains('pump')
-                  ? Colors.blue
-                  : myList[index].name.toLowerCase().contains('sprint')
-                      ? Colors.yellow
-                      : myList[index].name.toLowerCase().contains('zumba')
-                          ? Colors.green
-                          : myList[index].name.toLowerCase().contains('cx')
-                              ? Colors.orange
-                              : myList[index]
-                                      .name
-                                      .toLowerCase()
-                                      .contains('yoga')
-                                  ? Colors.pink
-                                  : myList[index]
-                                          .name
-                                          .toLowerCase()
-                                          .contains('spin')
-                                      ? Colors.teal
-                                      : Colors.amber,
-              elevation: 4,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15.0),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Column(
-                  children: <Widget>[
-                    Text(
-                      myList[index].shortName,
-                      style: GoogleFonts.roboto(
-                        textStyle: Theme.of(context).textTheme.display1,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                    Text(
-                      "${myList[index].start} to ${myList[index].finish} ",
-                      style: TextStyle(fontSize: 20.0),
-                    ),
-                  ],
-                ),
-              ),
-            ); //robohash.org api provide you different images for any number you are giving
-          }),
-        ),
+      return ClassesPage(
+        myList: myList,
       );
     });
     return Scaffold(
@@ -95,35 +71,41 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(currentDay),
       ),
+
       body: Flex(
         direction: Axis.vertical,
         children: <Widget>[
           Flexible(
-              flex: 1,
-              fit: FlexFit.loose,
-              child: Container (
-                color: Colors.blue,
-                child: Card(),
-              ),),
+            flex: 1,
+            fit: FlexFit.tight,
+            child: GridView.count(
+              crossAxisCount: 6,
+
+              children:  choices
+            ),
+          ),
           Flexible(
-            flex: 5,
-            fit: FlexFit.loose,
-            child: PageView(
-              children: pages,
-              onPageChanged: (int page) {
-                setState(() {
-                  currentDay = mdw.days[page];
-                });
-              },
+            flex: 9,
+            fit: FlexFit.tight,
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(4, 0, 4, 0),
+              child: PageView(
+                children: pages,
+                onPageChanged: (int page) {
+                  setState(() {
+                    currentDay = mdw.days[page];
+                  });
+                },
+              ),
             ),
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        tooltip: 'Increment',
-        child: Icon(Icons.android),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+//      floatingActionButton: FloatingActionButton(
+//        onPressed: () {},
+//        tooltip: 'Increment',
+//        child: Icon(Icons.android),
+//      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
