@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   String title = 'mdw';
   String currentDay = 'monday';
   LeisureCentre mdw = LeisureCentre();
-  int _currentIndex = 0;
+  int _currentPageIndex = 0;
 
   var _value;
   @override
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               classFilter = myClass;
 
               title = 'MDW ${classFilter == "" ? 'all classes' : classFilter}';
-              _currentIndex=0;
+              _currentPageIndex=0;
 
             },
           );
@@ -90,12 +90,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
     final List<Widget> pages2 = [
       ClassesAllDays(
-        myList: mdw.classList(classFilter),
+        myList: mdw.classList(className: classFilter, filterDay: ''),
       ),
       ClassesTimetable(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        myList: mdw.classList('').where((e) => e.type == 'pool').toList(),
+        myList: mdw.classList(className: '', filterDay: '').where((e) => e.type == 'pool').toList(),
       )
     ];
 
@@ -111,9 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
 
-      body: pages2[_currentIndex],
+      body: pages2[_currentPageIndex],
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex, // new
+        currentIndex: _currentPageIndex, // new
         onTap: onTabTapped, // new
 // a new tab is tapped
         items: [
@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void onTabTapped(int index) {
     setState(() {
-      _currentIndex = index;
+      _currentPageIndex = index;
       if (index==0) {
         title = 'MDW ${classFilter == "" ? 'all classes' : classFilter}';
       }else{

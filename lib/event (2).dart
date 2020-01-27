@@ -5,15 +5,15 @@ double convertStringTimeToDouble(s) {
   return double.parse(s.split(':')[0]) + double.parse(s.split(':')[1]) / 60;
 }
 
-Map dayColors = {
-  'Monday': Colors.orange,
-  'Tuesday': Colors.redAccent,
-  'Wednesday': Colors.purpleAccent,
-  'Thursday': Colors.cyan,
-  'Friday': Colors.green,
-  'Saturday': Colors.teal,
-  'Sunday': Colors.redAccent,
-};
+ Map dayColors = {
+   'Monday': Colors.orange,
+   'Tuesday': Colors.redAccent,
+   'Wednesday': Colors.purpleAccent,
+   'Thursday': Colors.cyan,
+   'Friday': Colors.green,
+   'Saturday': Colors.teal,
+   'Sunday': Colors.redAccent,
+ };
 
 Map<String, double> daysIndex = {
   'Monday': 0,
@@ -51,10 +51,10 @@ class Event {
 
   double get left =>
       (convertStringTimeToDouble(start) - TimeTable.left) *
-          TimeTable.multiplier;
+      TimeTable.multiplier;
   double get right =>
       (convertStringTimeToDouble(finish) - TimeTable.left) *
-          TimeTable.multiplier;
+      TimeTable.multiplier;
   double get width => right - left;
   double get height => 1 / 14;
   double get dayIndex => daysIndex[day];
@@ -69,74 +69,70 @@ class Event {
   }
 
   double get top =>
-      0.1+(poolType == 'learner' ? daysIndex[day] + 0.5 : daysIndex[day] + 0.0) / 7;
+      (poolType == 'learner' ? daysIndex[day] + 0.5 : daysIndex[day] + 0.0) / 7;
 
   String get shortName =>
       this.name.replaceAll('Les Mills ', '').replaceAll(' Virtual', '');
 
   bool get isVirtual => name.toLowerCase().contains('virtual');
 
-  Color get color {
-//    Map colorMap = {
-//      'public swim': Colors.blue,
-//      'bootle and north': Colors.green,
-//    };
-    String tmp = this.name.toLowerCase();
-    if (tmp.contains('public swim')) {
-      return Colors.blue;
-    }
-    if (tmp.contains('bootle and north')) {
-      return Colors.green;
-    }
-    if (tmp.contains('adults only')) {
-      return Colors.cyan;
-    }
-    if (tmp.contains('swim & splash')) {
-      return Colors.pinkAccent;
-    }
+   Color get color {
+     String tmp = this.name.toLowerCase();
+     if (tmp.contains('public swim')) {
+       return Colors.blue;
+     }
+     if (tmp.contains('bootle and north')) {
+       return Colors.green;
+     }
+     if (tmp.contains('adults only')) {
+       return Colors.cyan;
+     }
+     if (tmp.contains('swim & splash')) {
+       return Colors.pinkAccent;
+     }
 
-    if (tmp.contains('pump')) {
-      return Colors.red;
-    }
-    if (tmp.contains('spin') ||
-        tmp.contains('trip') ||
-        tmp.contains('sprint') ||
-        tmp.contains('rpm')) {
-      return Colors.blue;
-    }
-    if (tmp.contains('yoga')) {
-      return Colors.yellow;
-    }
-    if (tmp.contains('pilates')) {
-      return Colors.green;
-    }
-    if (tmp.contains('zumba')) {
-      return Colors.green;
-    }
-    if (tmp.contains('aqua')) {
-      return Colors.pink;
-    }
-    if (tmp.contains('combat')) {
-      return Colors.teal;
-    }
-    if (tmp.contains('tai chi')) {
-      return Colors.indigoAccent;
-    }
+     if (tmp.contains('pump')) {
+       return Colors.red;
+     }
+     if (tmp.contains('spin') ||
+         tmp.contains('trip') ||
+         tmp.contains('sprint') ||
+         tmp.contains('rpm')) {
+       return Colors.blue;
+     }
+     if (tmp.contains('yoga')) {
+       return Colors.yellow;
+     }
+     if (tmp.contains('pilates')) {
+       return Colors.green;
+     }
+     if (tmp.contains('zumba')) {
+       return Colors.green;
+     }
+     if (tmp.contains('aqua')) {
+       return Colors.pink;
+     }
+     if (tmp.contains('combat')) {
+       return Colors.teal;
+     }
+     if (tmp.contains('tai chi')) {
+       return Colors.indigoAccent;
+     }
 
-    if (tmp.contains('grit') || tmp.contains('hiit')) {
-      return Colors.deepOrangeAccent;
-    }
+     if (tmp.contains('grit') || tmp.contains('hiit')) {
+       return Colors.deepOrangeAccent;
+     }
 
-    if (tmp.contains('padwork') || tmp.contains('boxer')) {
-      return Colors.purple;
-    }
-    return Colors.grey;
-  }
+     if (tmp.contains('padwork') || tmp.contains('boxer')) {
+       return Colors.purple;
+     }
+     return Colors.grey;
+   }
 
-  Color get dayColor {
-    print(this.day);
-    return dayColors[this.day];
-  }
+   Color get dayColor {
+     print(this.day);
+     return dayColors[this.day];
+   }
 }
 
 class LeisureCentre {
@@ -188,13 +184,12 @@ class LeisureCentre {
   List classList({String filterDay, String className}) {
     List<Event> tmpEvents = [];
     List<Event> filteredEvents = [];
-    if (filterDay == null || filterDay == '' ) {
-      tmpEvents = events;
-
-    } else {
+    if (filterDay != null) {
       tmpEvents = events
           .where((e) => e.day.toLowerCase() == filterDay.toLowerCase())
           .toList();
+    } else {
+      tmpEvents = events;
     }
 
     switch (className) {
