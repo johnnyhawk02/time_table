@@ -15,7 +15,7 @@ Map dayColors = {
   'Sunday': Colors.redAccent,
 };
 
-Map<String,double> daysIndex = {
+Map<String, double> daysIndex = {
   'Monday': 0,
   'Tuesday': 1,
   'Wednesday': 2,
@@ -54,10 +54,12 @@ class Event {
   double get right =>
       (convertStringTimeToDouble(finish) - TimeTable.left) *
       TimeTable.multiplier;
-  double get width => right-left;
-  double get height => 1/7;
+  double get width => right - left;
+  double get height => 1 / 14;
   double get dayIndex => daysIndex[day];
-  double get top => daysIndex[day]/7; //TODO
+  String get poolType => this.info.contains('Learner') ? 'learner' : 'adult';
+  double get top =>
+      (poolType == 'learner' ? daysIndex[day] + 0.5 : daysIndex[day] + 0.0) / 7;
 
   String get shortName =>
       this.name.replaceAll('Les Mills ', '').replaceAll(' Virtual', '');
@@ -65,6 +67,19 @@ class Event {
   bool get isVirtual => name.toLowerCase().contains('virtual');
   Color get color {
     String tmp = this.name.toLowerCase();
+    if (tmp.contains('public swim')) {
+      return Colors.blue;
+    }
+    if (tmp.contains('bootle and north')) {
+      return Colors.green;
+    }
+    if (tmp.contains('adults only')) {
+      return Colors.cyan;
+    }
+    if (tmp.contains('swim & splash')) {
+      return Colors.pinkAccent;
+    }
+
     if (tmp.contains('pump')) {
       return Colors.red;
     }
@@ -120,6 +135,9 @@ class LeisureCentre {
     'cx',
     'grit',
     'hiit',
+    'public swim',
+    'adult swim',
+    'public swim learner pool'
   ];
 
   List days = [
@@ -156,7 +174,55 @@ class LeisureCentre {
     List<Event> filteredEvents = [];
     switch (className) {
       case 'all':
-        {filteredEvents=events;}
+        {
+          filteredEvents = events.where((e) => e.type == 'class').toList();
+        }
+        break;
+
+      case 'pool':
+        {
+          filteredEvents = events.where((e) => e.type == 'pool').toList();
+        }
+        break;
+
+      case 'public swim':
+      {
+        print('filtering start');
+
+        events.forEach((e) {
+          if (e.name.toLowerCase().contains('public swim')) {
+            filteredEvents.add(e);
+            print('filtering');
+          }
+        });
+      }
+      break;
+
+      case 'adult swim':
+        {
+          print('filtering start');
+
+          events.forEach((e) {
+            if (e.name.toLowerCase().contains('adult')){
+              filteredEvents.add(e);
+              print('filtering');
+            }
+          });
+        }
+        break;
+
+      case 'public swim learner pool':
+        {
+          print('filtering start');
+
+          events.forEach((e) {
+            if (e.name.toLowerCase().contains('public swim')&&
+            e.poolType == 'learner') {
+              filteredEvents.add(e);
+              print('filtering');
+            }
+          });
+        }
         break;
 
       case 'bike':
@@ -165,7 +231,8 @@ class LeisureCentre {
 
           events.forEach((e) {
             if (e.name.toLowerCase().contains('spin') ||
-                e.name.toLowerCase().contains('sprint')) {
+                e.name.toLowerCase().contains('sprint') ||
+                e.name.toLowerCase().contains('trip')) {
               filteredEvents.add(e);
               print('filtering');
             }

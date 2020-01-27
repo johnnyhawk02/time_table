@@ -28,18 +28,16 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   String classFilter = '';
-
+  String title = 'mdw';
   String currentDay = 'monday';
   LeisureCentre mdw = LeisureCentre();
   int _currentIndex = 0;
-
 
   var _value;
   @override
@@ -49,16 +47,18 @@ class _MyHomePageState extends State<MyHomePage> {
     print('got tempList');
     List myList;
 
-
-
     final choices = List<Widget>.generate(mdw.classFilters.length, (i) {
       var myClass = mdw.classFilters[i];
       return ListTile(
-         title: Text(myClass),
-         onTap: () {
+        title: Text(myClass),
+        onTap: () {
           setState(
-                () {
+            () {
               classFilter = myClass;
+
+              title = 'MDW ${classFilter == "" ? 'all classes' : classFilter}';
+              _currentIndex=0;
+
             },
           );
           Navigator.pop(context);
@@ -89,27 +89,25 @@ class _MyHomePageState extends State<MyHomePage> {
 //    });
 
     final List<Widget> pages2 = [
-
-       ClassesAllDays(myList: mdw.classList(classFilter),),
+      ClassesAllDays(
+        myList: mdw.classList(classFilter),
+      ),
       ClassesTimetable(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         myList: mdw.classList('').where((e) => e.type == 'pool').toList(),
       )
-
     ];
 
     return Scaffold(
       backgroundColor: Colors.white70,
       appBar: AppBar(
-        title: Text('MDW ${classFilter == "" ? 'all classes' : classFilter}'),
+        title: Text(title),
       ),
       drawer: Drawer(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: choices
-          ),
+          child: ListView(children: choices),
         ),
       ),
 
@@ -120,17 +118,15 @@ class _MyHomePageState extends State<MyHomePage> {
 // a new tab is tapped
         items: [
           BottomNavigationBarItem(
-            icon: new Icon(Icons.home),
-            title: new Text('Home'),
+            icon: new Icon(Icons.accessibility_new),
+            title: new Text('Classes'),
           ),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.mail),
-            title: new Text('Messages'),
+            icon: new Icon(Icons.beach_access,),
+            title: new Text('Swim timetable'),
           ),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              title: Text('Profile')
-          )
+//          BottomNavigationBarItem(
+//              icon: Icon(Icons.person), title: Text('Profile'))
         ],
       ),
 //      floatingActionButton: FloatingActionButton(
@@ -140,9 +136,16 @@ class _MyHomePageState extends State<MyHomePage> {
 //      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+
   void onTabTapped(int index) {
     setState(() {
       _currentIndex = index;
+      if (index==0) {
+        title = 'MDW ${classFilter == "" ? 'all classes' : classFilter}';
+      }else{
+        title = 'MDW Swim';
+      }
+
     });
   }
 }

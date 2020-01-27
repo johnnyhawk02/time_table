@@ -29,16 +29,17 @@ class ClassesAllDays extends StatelessWidget {
               foregroundColor: Colors.white,
             ),
             title: Text(event.shortName),
-            subtitle: Text(event.start),
+            subtitle: Text('${event.start} - ${event.finish}'),
             trailing: myList[index].isVirtual
-                ? Icon(
-                    Icons.tv,
-                    color: Colors.black45,
-                  )
-                : Icon(
-                    Icons.accessibility,
-                    color: Colors.black45,
-                  ),
+                ? CircleAvatar(
+              backgroundColor: Colors.grey  ,
+              child: Text('V'),
+              maxRadius: 10,
+              foregroundColor: Colors.white,
+            )
+                : Text (''),
+
+
 
             //dense: true,
           );
