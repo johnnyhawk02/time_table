@@ -4,7 +4,7 @@ List eventsList = [
     'name': 'Les Mills The Trip',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '06:45 - 07:30',
   },
   {
@@ -12,7 +12,7 @@ List eventsList = [
     'name': 'Les Mills CXWorx Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '07:30 - 08:00',
   },
   {
@@ -20,7 +20,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '08:15 - 09:00',
   },
   {
@@ -28,7 +28,7 @@ List eventsList = [
     'name': 'Aerobics',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '09:30 - 10:30',
   },
   {
@@ -36,7 +36,7 @@ List eventsList = [
     'name': 'Yoga',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '10:30 - 11:30',
   },
   {
@@ -44,7 +44,7 @@ List eventsList = [
     'name': 'Chair based circuit',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '11:30 - 12:30',
   },
   {
@@ -52,7 +52,7 @@ List eventsList = [
     'name': 'Spin',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '11:30 - 12:15',
   },
   {
@@ -60,7 +60,7 @@ List eventsList = [
     'name': 'Aqua Aerobics',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '12:00 - 12:45',
   },
   {
@@ -68,7 +68,7 @@ List eventsList = [
     'name': 'Pilates',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '13:00 - 14:00',
   },
   {
@@ -76,7 +76,7 @@ List eventsList = [
     'name': 'Relax and Revive',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '13:30 - 14:30',
   },
   {
@@ -84,7 +84,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '14:15 - 15:15',
   },
   {
@@ -92,7 +92,7 @@ List eventsList = [
     'name': 'Les Mills CXWorx Virtual',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '15:30 - 16:00',
   },
   {
@@ -100,7 +100,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '16:15 - 16:45',
   },
   {
@@ -108,7 +108,7 @@ List eventsList = [
     'name': 'Les Mills Body Balance Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '17:00 - 17:30',
   },
   {
@@ -116,7 +116,7 @@ List eventsList = [
     'name': 'Cardio Kick',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '18:00 - 18:45',
   },
   {
@@ -124,7 +124,7 @@ List eventsList = [
     'name': 'Les Mills CXWorx',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '18:30 - 19:00',
   },
   {
@@ -132,7 +132,7 @@ List eventsList = [
     'name': 'Boxercise',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '19:00 - 19:45',
   },
   {
@@ -140,7 +140,7 @@ List eventsList = [
     'name': 'Zumba',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '19:00 - 20:00',
   },
   {
@@ -148,7 +148,7 @@ List eventsList = [
     'name': 'Les Mills Sprint',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '19:50 - 20:20',
   },
   {
@@ -156,7 +156,7 @@ List eventsList = [
     'name': 'HIIT',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '20:00 - 20:45',
   },
   {
@@ -164,7 +164,7 @@ List eventsList = [
     'name': 'Yoga',
     'type': 'class',
     'info': '',
-    'day': 'monday',
+    'day': 'Monday',
     'time': '20:30 - 21:30',
   },
   {
@@ -172,7 +172,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '06:45 - 07:30',
   },
   {
@@ -180,7 +180,7 @@ List eventsList = [
     'name': 'Les Mills ShBam Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '07:45 - 08:30',
   },
   {
@@ -188,7 +188,7 @@ List eventsList = [
     'name': 'Les Mills Sprint',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '08:45 - 09:15',
   },
   {
@@ -196,7 +196,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '09:30 - 10:30',
   },
   {
@@ -204,7 +204,7 @@ List eventsList = [
     'name': 'Les Mills CXWorx',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '10:30 - 11:00',
   },
   {
@@ -212,7 +212,7 @@ List eventsList = [
     'name': 'Zumba',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '11:00 - 12:00',
   },
   {
@@ -220,7 +220,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '13:15 - 14:15',
   },
   {
@@ -228,7 +228,7 @@ List eventsList = [
     'name': 'Les Mills Body Balance Virtual',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '14:30 - 15:00',
   },
   {
@@ -236,7 +236,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '15:15 - 16:15',
   },
   {
@@ -244,7 +244,7 @@ List eventsList = [
     'name': 'Les Mills The Trip',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '15:30 - 16:15',
   },
   {
@@ -252,7 +252,7 @@ List eventsList = [
     'name': 'Les Mills ShBam Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '16:30 - 17:00',
   },
   {
@@ -260,7 +260,7 @@ List eventsList = [
     'name': 'Les Mills Sprint',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '17:15 - 17:45',
   },
   {
@@ -268,7 +268,7 @@ List eventsList = [
     'name': 'Booty Build',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '18:00 - 18:30',
   },
   {
@@ -276,7 +276,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '18:00 - 19:00',
   },
   {
@@ -284,7 +284,7 @@ List eventsList = [
     'name': 'Les Mills Sprint',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '19:00 - 19:30',
   },
   {
@@ -292,7 +292,7 @@ List eventsList = [
     'name': 'Legs, Bums & Tums',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '19:30 - 20:15',
   },
   {
@@ -300,7 +300,7 @@ List eventsList = [
     'name': 'Pilates',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '19:30 - 20:30',
   },
   {
@@ -308,7 +308,7 @@ List eventsList = [
     'name': 'Aqua Aerobics',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '20:00 - 20:45',
   },
   {
@@ -316,7 +316,7 @@ List eventsList = [
     'name': 'HIIT',
     'type': 'class',
     'info': '',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '20:15 - 21:15',
   },
   {
@@ -324,7 +324,7 @@ List eventsList = [
     'name': 'Les Mills Body Balance Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'tuesday',
+    'day': 'Tuesday',
     'time': '21:15 - 21:45',
   },
   {
@@ -332,7 +332,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '06:45 - 07:45',
   },
   {
@@ -340,7 +340,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual Sprint',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '07:00 - 07:30',
   },
   {
@@ -348,7 +348,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '08:00 - 08:30',
   },
   {
@@ -356,7 +356,7 @@ List eventsList = [
     'name': 'Les Mills ShBam Virtual',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '08:30 - 09:15',
   },
   {
@@ -364,7 +364,7 @@ List eventsList = [
     'name': 'Spin',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '09:30 - 10:30',
   },
   {
@@ -372,7 +372,7 @@ List eventsList = [
     'name': 'Total Tone',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '10:30 - 11:30',
   },
   {
@@ -380,7 +380,7 @@ List eventsList = [
     'name': 'Abs Blast',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '11:30 - 12:00',
   },
   {
@@ -388,7 +388,7 @@ List eventsList = [
     'name': 'Les Mills Body Balance Virtual',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '12:15 - 13:15',
   },
   {
@@ -396,7 +396,7 @@ List eventsList = [
     'name': 'Les Mills ShBam Virtual',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '13:30 - 14:15',
   },
   {
@@ -404,7 +404,7 @@ List eventsList = [
     'name': 'Les Mills The Trip',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '14:30 - 15:15',
   },
   {
@@ -412,7 +412,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '15:45 - 16:45',
   },
   {
@@ -420,7 +420,7 @@ List eventsList = [
     'name': 'Les Mills CXWorx Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '16:30 - 17:00',
   },
   {
@@ -428,7 +428,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '17:15 - 17:45',
   },
   {
@@ -436,7 +436,7 @@ List eventsList = [
     'name': 'Les Mills Grit',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '18:00 - 18:45',
   },
   {
@@ -444,7 +444,7 @@ List eventsList = [
     'name': 'Spin',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '18:00 - 18:45',
   },
   {
@@ -452,7 +452,7 @@ List eventsList = [
     'name': 'Boxercise',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '19:00 - 19:45',
   },
   {
@@ -460,7 +460,7 @@ List eventsList = [
     'name': 'Les Mills CXWorx',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '19:00 - 19:30',
   },
   {
@@ -468,7 +468,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '19:30 - 20:30',
   },
   {
@@ -476,7 +476,7 @@ List eventsList = [
     'name': 'Dance Fit',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '19:45 - 20:30',
   },
   {
@@ -484,7 +484,7 @@ List eventsList = [
     'name': 'Yoga',
     'type': 'class',
     'info': '',
-    'day': 'wednesday',
+    'day': 'Wednesday',
     'time': '20:30 - 21:30',
   },
   {
@@ -492,7 +492,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '06:45 - 07:45',
   },
   {
@@ -500,7 +500,7 @@ List eventsList = [
     'name': 'Les Mills The Trip',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '06:45 - 07:30',
   },
   {
@@ -508,7 +508,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '08:00 - 09:00',
   },
   {
@@ -516,7 +516,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual Sprint',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '08:00 - 08:30',
   },
   {
@@ -524,7 +524,7 @@ List eventsList = [
     'name': 'Spin',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '09:15 - 10:00',
   },
   {
@@ -532,7 +532,7 @@ List eventsList = [
     'name': 'Yoga',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '10:00 - 11:00',
   },
   {
@@ -540,7 +540,7 @@ List eventsList = [
     'name': 'Aqua Aerobics',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '10:15 - 11:00',
   },
   {
@@ -548,7 +548,7 @@ List eventsList = [
     'name': 'Zumba',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '11:00 - 12:00',
   },
   {
@@ -556,7 +556,7 @@ List eventsList = [
     'name': 'Padwork Circuit',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '11:15 - 12:00',
   },
   {
@@ -564,7 +564,7 @@ List eventsList = [
     'name': 'Total Tone',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '12:00 - 13:00',
   },
   {
@@ -572,7 +572,7 @@ List eventsList = [
     'name': 'Relax and Revive',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '12:15 - 13:15',
   },
   {
@@ -580,7 +580,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '13:15 - 14:00',
   },
   {
@@ -588,7 +588,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '14:30 - 15:15',
   },
   {
@@ -596,7 +596,7 @@ List eventsList = [
     'name': 'Les Mills Body Balance Virtual',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '15:30 - 16:00',
   },
   {
@@ -604,7 +604,7 @@ List eventsList = [
     'name': 'Les Mills ShBam Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '16:15 - 17:00',
   },
   {
@@ -612,7 +612,7 @@ List eventsList = [
     'name': 'Les Mills Sprint',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '18:00 - 18:30',
   },
   {
@@ -620,7 +620,7 @@ List eventsList = [
     'name': 'Cardio Kick',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '18:45 - 19:30',
   },
   {
@@ -628,7 +628,7 @@ List eventsList = [
     'name': 'Tai Chi',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '19:00 - 20:00',
   },
   {
@@ -636,7 +636,7 @@ List eventsList = [
     'name': 'Les Mills Grit',
     'type': 'class',
     'info': '',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '19:30 - 20:15',
   },
   {
@@ -644,7 +644,7 @@ List eventsList = [
     'name': 'Les Mills The Trip',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '20:20 - 21:05',
   },
   {
@@ -652,7 +652,7 @@ List eventsList = [
     'name': 'Les Mills Body Balance Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'thursday',
+    'day': 'Thursday',
     'time': '21:10 - 21:40',
   },
   {
@@ -660,7 +660,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '06:45 - 07:30',
   },
   {
@@ -668,7 +668,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '06:45 - 07:30',
   },
   {
@@ -676,7 +676,7 @@ List eventsList = [
     'name': 'Les Mills CXWorx Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '07:45 - 08:15',
   },
   {
@@ -684,7 +684,7 @@ List eventsList = [
     'name': 'Les Mills The Trip',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '07:45 - 08:30',
   },
   {
@@ -692,7 +692,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '08:45 - 09:15',
   },
   {
@@ -700,7 +700,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '09:25 - 10:25',
   },
   {
@@ -708,7 +708,7 @@ List eventsList = [
     'name': 'Tai Chi',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '09:30 - 10:30',
   },
   {
@@ -716,7 +716,7 @@ List eventsList = [
     'name': 'Spin',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '10:30 - 11:15',
   },
   {
@@ -724,7 +724,7 @@ List eventsList = [
     'name': 'Tai Chi',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '10:30 - 11:30',
   },
   {
@@ -732,7 +732,7 @@ List eventsList = [
     'name': 'Total Tone',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '11:30 - 12:30',
   },
   {
@@ -740,7 +740,7 @@ List eventsList = [
     'name': 'Aqua Aerobics',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '12:00 - 13:00',
   },
   {
@@ -748,7 +748,7 @@ List eventsList = [
     'name': 'Pilates',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '12:30 - 13:30',
   },
   {
@@ -756,7 +756,7 @@ List eventsList = [
     'name': 'Les Mills ShBam Virtual',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '13:45 - 14:30',
   },
   {
@@ -764,7 +764,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '14:45 - 15:30',
   },
   {
@@ -772,7 +772,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '15:45 - 16:45',
   },
   {
@@ -780,7 +780,7 @@ List eventsList = [
     'name': 'Pilates',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '17:00 - 18:00',
   },
   {
@@ -788,7 +788,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '18:00 - 18:45',
   },
   {
@@ -796,7 +796,7 @@ List eventsList = [
     'name': 'Les Mills Sprint',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '19:00 - 19:30',
   },
   {
@@ -804,7 +804,7 @@ List eventsList = [
     'name': 'Les Mills CXWorx',
     'type': 'class',
     'info': '',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '19:30 - 20:00',
   },
   {
@@ -812,7 +812,7 @@ List eventsList = [
     'name': 'Les Mills Body Balance Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'friday',
+    'day': 'Friday',
     'time': '20:40 - 21:10',
   },
   {
@@ -820,7 +820,7 @@ List eventsList = [
     'name': 'Les Mills ShBam Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '08:15 - 09:00',
   },
   {
@@ -828,7 +828,7 @@ List eventsList = [
     'name': 'Advanced Tai Chi',
     'type': 'class',
     'info': '',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '09:00 - 10:00',
   },
   {
@@ -836,7 +836,7 @@ List eventsList = [
     'name': 'Les Mills Grit Strength',
     'type': 'class',
     'info': '',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '09:15 - 09:45',
   },
   {
@@ -844,7 +844,7 @@ List eventsList = [
     'name': 'Baby Ballet',
     'type': 'class',
     'info': '',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '10:00 - 11:00',
   },
   {
@@ -852,7 +852,7 @@ List eventsList = [
     'name': 'Les Mills Sprint',
     'type': 'class',
     'info': '',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '10:00 - 10:30',
   },
   {
@@ -860,7 +860,7 @@ List eventsList = [
     'name': 'Les Mills Grit Plyo',
     'type': 'class',
     'info': '',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '10:35 - 11:05',
   },
   {
@@ -868,7 +868,7 @@ List eventsList = [
     'name': 'Les Mills The Trip',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '11:30 - 12:15',
   },
   {
@@ -876,7 +876,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '13:00 - 14:00',
   },
   {
@@ -884,7 +884,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '14:00 - 15:00',
   },
   {
@@ -892,7 +892,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'saturday',
+    'day': 'Saturday',
     'time': '15:30 - 16:00',
   },
   {
@@ -900,7 +900,7 @@ List eventsList = [
     'name': 'Les Mills Body Combat Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'sunday',
+    'day': 'Sunday',
     'time': '09:00 - 10:00',
   },
   {
@@ -908,7 +908,7 @@ List eventsList = [
     'name': 'Yoga',
     'type': 'class',
     'info': '',
-    'day': 'sunday',
+    'day': 'Sunday',
     'time': '10:00 - 11:00',
   },
   {
@@ -916,7 +916,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump',
     'type': 'class',
     'info': '',
-    'day': 'sunday',
+    'day': 'Sunday',
     'time': '11:00 - 12:00',
   },
   {
@@ -924,7 +924,7 @@ List eventsList = [
     'name': 'Les Mills RPM Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'sunday',
+    'day': 'Sunday',
     'time': '11:45 - 12:30',
   },
   {
@@ -932,7 +932,7 @@ List eventsList = [
     'name': 'Les Mills Body Pump Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'sunday',
+    'day': 'Sunday',
     'time': '12:45 - 13:45',
   },
   {
@@ -940,7 +940,7 @@ List eventsList = [
     'name': 'Les Mills The Trip',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'sunday',
+    'day': 'Sunday',
     'time': '13:00 - 13:45',
   },
   {
@@ -948,7 +948,7 @@ List eventsList = [
     'name': 'Les Mills ShBam Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'sunday',
+    'day': 'Sunday',
     'time': '14:00 - 14:45',
   },
   {
@@ -956,7 +956,452 @@ List eventsList = [
     'name': 'Les Mills Body Balance Virtual',
     'type': 'class',
     'info': 'Youth Applicable',
-    'day': 'sunday',
+    'day': 'Sunday',
     'time': '15:00 - 16:00',
   },
+  {
+    'site':'MDW',
+    'name':'60+ £1 Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Monday', 'time':'06:30 - 08:30',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool & Learner Pool',
+    'day': 'Monday', 'time':'06:30 - 09:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Monday', 'time':'09:00 - 12:00',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Monday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Aqua Fit', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Monday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Monday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Swim & Splash', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Monday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Monday', 'time':'13:00 - 15:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Monday', 'time':'15:00 - 16:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Monday', 'time':'15:00 - 19:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Monday', 'time':'16:00 - 19:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Monday', 'time':'16:00 - 19:00',},
+  {
+    'site':'MDW',
+    'name':'Bootle and North Swim Club', 'type':'pool',
+    'info':'Main pool',
+    'day': 'Monday', 'time':'19:00 - 21:00',},
+  {
+    'site':'MDW',
+    'name':'2 Lane Triathlon', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Monday', 'time':'21:00 - 22:00',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Monday', 'time':'21:00 - 22:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Tuesday', 'time':'06:30 - 09:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Tuesday', 'time':'06:30 - 08:00',},
+  {
+    'site':'MDW',
+    'name':'Calm Waters', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Tuesday', 'time':'08:00 - 09:00',},
+  {
+    'site':'MDW',
+    'name':'Aqua Natal', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Tuesday', 'time':'09:00 - 10:30',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Tuesday', 'time':'09:00 - 11:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Tuesday', 'time':'09:30 - 12:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Fit', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Tuesday', 'time':'11:00 - 12:00',},
+  {
+    'site':'MDW',
+    'name':'60+ £1 Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Tuesday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Tuesday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Swim & Splash', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Tuesday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Tuesday', 'time':'13:00 - 15:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Tuesday', 'time':'15:00 - 16:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Tuesday', 'time':'16:00 - 20:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Tuesday', 'time':'16:00 - 20:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Tuesday', 'time':'16:00 - 20:00',},
+  {
+    'site':'MDW',
+    'name':'Aqua Fit', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Tuesday', 'time':'20:00 - 20:45',},
+  {
+    'site':'MDW',
+    'name':'2 Lane Triathlon', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Tuesday', 'time':'20:45 - 21:45',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Tuesday', 'time':'20:45 - 21:45',},
+  {
+    'site':'MDW',
+    'name':'60+ £1 Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Wednesday', 'time':'06:30 - 08:30',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Wednesday', 'time':'06:30 - 09:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Wednesday', 'time':'06:30 - 11:30',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Wednesday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Swim & Splash', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Wednesday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Wednesday', 'time':'13:00 - 16:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Wednesday', 'time':'15:00 - 15:30',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Wednesday', 'time':'15:35 - 19:00',},
+  {
+    'site':'MDW',
+    'name':'Juniors £1 swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Wednesday', 'time':'16:00 - 18:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Wednesday', 'time':'16:00 - 20:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Wednesday', 'time':'16:00 - 19:35',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Wednesday', 'time':'19:00 - 20:00',},
+  {
+    'site':'MDW',
+    'name':'Calm Waters (Ladies)', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Wednesday', 'time':'20:00 - 21:00',},
+  {
+    'site':'MDW',
+    'name':'2 Lane Triathlon', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Wednesday', 'time':'21:00 - 22:00',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Wednesday', 'time':'21:00 - 22:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Thursday', 'time':'06:30 - 09:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Thursday', 'time':'06:30 - 08:00',},
+  {
+    'site':'MDW',
+    'name':'Calm Waters', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Thursday', 'time':'08:00 - 09:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Thursday', 'time':'09:00 - 12:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Thursday', 'time':'09:30 - 12:00',},
+  {
+    'site':'MDW',
+    'name':'60+ £1 Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Thursday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Thursday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Swim & Splash', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Thursday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Thursday', 'time':'13:00 - 16:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Thursday', 'time':'15:00 - 16:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Thursday', 'time':'16:00 - 18:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Thursday', 'time':'16:00 - 20:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Thursday', 'time':'16:00 - 19:00',},
+  {
+    'site':'MDW',
+    'name':'Bootle and North Swim Club', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Thursday', 'time':'19:00 - 21:00',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Main pool',
+    'day': 'Thursday', 'time':'21:00 - 22:00',},
+  {
+    'site':'MDW',
+    'name':'60+ £1 Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Friday', 'time':'06:30 - 08:30',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Friday', 'time':'06:30 - 09:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Friday', 'time':'06:30 - 12:00',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Friday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Aqua Fit', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Friday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Swim & Splash', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Friday', 'time':'12:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Friday', 'time':'13:00 - 15:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Friday', 'time':'15:00 - 19:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Friday', 'time':'15:00 - 19:00',},
+  {
+    'site':'MDW',
+    'name':'Swim & Splash', 'type':'pool',
+    'info':'Main Pool & Learner Pool **50% discount Friday Night Swim & Splash**',
+    'day': 'Friday', 'time':'19:00 - 20:00',},
+  {
+    'site':'MDW',
+    'name':'2 Lane Triathlon', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Friday', 'time':'20:00 - 21:00',},
+  {
+    'site':'MDW',
+    'name':'Adults Only', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Friday', 'time':'20:00 - 21:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Saturday', 'time':'08:30 - 15:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Saturday', 'time':'08:30 - 12:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Saturday', 'time':'08:30 - 11:30',},
+  {
+    'site':'MDW',
+    'name':'3 Lane Lifesaving Club', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Saturday', 'time':'11:30 - 14:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Saturday', 'time':'12:00 - 15:00',},
+  {
+    'site':'MDW',
+    'name':'Swim & Splash', 'type':'pool',
+    'info':'Main Pool & Learner Pool',
+    'day': 'Saturday', 'time':'15:00 - 17:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Sunday', 'time':'08:30 - 10:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Sunday', 'time':'08:30 - 10:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Learner Pool',
+    'day': 'Sunday', 'time':'10:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Public Swim', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Sunday', 'time':'10:00 - 13:00',},
+  {
+    'site':'MDW',
+    'name':'Swim Lessons', 'type':'pool',
+    'info':'Half of Main Pool',
+    'day': 'Sunday', 'time':'10:00 - 12:00',},
+  {
+    'site':'MDW',
+    'name':'Swim & Splash', 'type':'pool',
+    'info':'Main Pool & Learner Pool',
+    'day': 'Sunday', 'time':'13:00 - 14:00',},
+  {
+    'site':'MDW',
+    'name':'Juniors £1 swim', 'type':'pool',
+    'info':'Main Pool & Learner Pool',
+    'day': 'Sunday', 'time':'14:00 - 15:00',},
+  {
+    'site':'MDW',
+    'name':'Bootle and North Swim Club', 'type':'pool',
+    'info':'Main Pool',
+    'day': 'Sunday', 'time':'15:15 - 17:15',},
 ];

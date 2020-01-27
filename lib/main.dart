@@ -4,6 +4,7 @@ import 'package:menu/menu.dart';
 
 import 'classes_all_days.dart';
 import 'classes_page.dart';
+import 'classes_timetable.dart';
 import 'event.dart';
 
 void main() => runApp(MyApp());
@@ -27,6 +28,7 @@ class MyHomePage extends StatefulWidget {
 
   final String title;
 
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -36,88 +38,99 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String currentDay = 'monday';
   LeisureCentre mdw = LeisureCentre();
+  int _currentIndex = 0;
+
 
   var _value;
   @override
   Widget build(BuildContext context) {
-    List tempList = mdw.classList(classFilter);
+    //List tempList = mdw.classList(classFilter);
 
     print('got tempList');
     List myList;
-    var tmpClass = [
-      'pump',
-      'sprint',
-      'yoga',
-      'zumba',
-      'boxer',
-      'b',
-      'd',
-    ];
-    final choices = List<Widget>.generate(tmpClass.length, (i) {
-      return ChoiceChip(
-        pressElevation: 0.0,
-        selectedColor: Colors.blue,
-        backgroundColor: Colors.grey[100],
-        label: Text(tmpClass[i]),
-        selected: _value == tmpClass[i],
-        onSelected: (bool selected) {
+
+
+
+    final choices = List<Widget>.generate(mdw.classFilters.length, (i) {
+      var myClass = mdw.classFilters[i];
+      return ListTile(
+         title: Text(myClass),
+         onTap: () {
           setState(
-            () {
-              _value = selected ? tmpClass[i] : null;
-              classFilter = _value == tmpClass[i] ? tmpClass[i] : '';
+                () {
+              classFilter = myClass;
             },
           );
+          Navigator.pop(context);
         },
       );
     });
 
-    final pages = List<Widget>.generate(7, (i) {
-      myList = tempList.where((e) => e.day == mdw.days[i]).toList();
-      return ClassesPage(
-        myList: myList,
-      );
-    });
-    final pagesAllDays = List<Widget>.generate(1, (i) {
-      myList = tempList; //.where((e) => e.day == mdw.days[i]).toList();
-      return ClassesAllDays(
-        myList: myList,
-      );
-    });
+//    final pages = List<Widget>.generate(7, (i) {
+//      myList = tempList.where((e) => e.day == mdw.days[i]).toList();
+//      return ClassesPage(
+//        myList: myList,
+//      );
+//    });
+//    final pagesAllDays = List<Widget>.generate(1, (i) {
+//      myList = tempList; //.where((e) => e.day == mdw.days[i]).toList();
+//      return ClassesAllDays(
+//        myList: myList,
+//      );
+//    });
+//
+//    final pagesClassesTimetable = List<Widget>.generate(1, (i) {
+//      myList = tempList.where((e) => e.type == 'pool').toList();
+//      return ClassesTimetable(
+//        width: MediaQuery.of(context).size.width,
+//        height: MediaQuery.of(context).size.height,
+//        myList: myList,
+//      );
+//    });
+
+    final List<Widget> pages2 = [
+
+       ClassesAllDays(myList: mdw.classList(classFilter),),
+      ClassesTimetable(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        myList: mdw.classList('').where((e) => e.type == 'pool').toList(),
+      )
+
+    ];
+
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white70,
       appBar: AppBar(
-        title: Text(' ${classFilter == "" ? 'all classes' : classFilter}'),
+        title: Text('MDW ${classFilter == "" ? 'all classes' : classFilter}'),
+      ),
+      drawer: Drawer(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListView(
+            children: choices
+          ),
+        ),
       ),
 
-      body: Flex(
-        direction: Axis.vertical,
-        children: <Widget>[
-          Flexible(
-            flex: 3,
-            fit: FlexFit.tight,
-            child: Wrap(
-              runSpacing: 5.0,
-              spacing: 5.0,
-              //scrollDirection: Axis.horizontal,
-              //crossAxisCount: 1,
-              children: choices,
-            ),
+      body: pages2[_currentIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex, // new
+        onTap: onTabTapped, // new
+// a new tab is tapped
+        items: [
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.home),
+            title: new Text('Home'),
           ),
-          Flexible(
-            flex: 18,
-            fit: FlexFit.tight,
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(4, 0, 4, 0),
-              child: PageView(
-                children: pagesAllDays, //pages,
-                onPageChanged: (int page) {
-                  setState(() {
-                    currentDay = mdw.days[page];
-                  });
-                },
-              ),
-            ),
+          BottomNavigationBarItem(
+            icon: new Icon(Icons.mail),
+            title: new Text('Messages'),
           ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              title: Text('Profile')
+          )
         ],
       ),
 //      floatingActionButton: FloatingActionButton(
@@ -126,5 +139,10 @@ class _MyHomePageState extends State<MyHomePage> {
 //        child: Icon(Icons.android),
 //      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
+  }
+  void onTabTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
   }
 }
